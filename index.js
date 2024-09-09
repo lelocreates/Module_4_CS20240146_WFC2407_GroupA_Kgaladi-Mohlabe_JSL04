@@ -6,16 +6,17 @@
 // Possible values: 'Regular', 'Sugar-free', or undefined
 
 let userPreference = "Sugar-free"
-if (userPreference === "Regular"  || userPreference === "Sugar-free"  ) {
+/*if (userPreference === "Regular"  || userPreference === "Sugar-free"  ) {
     console.log(userPreference);
 } else {
     let userPreference = "Regular"
     console.log(userPreference);
 }
-
+*/
+let flavorSelection = userPreference === "Regular"  || userPreference === "Sugar-free" ? userPreference : "Regular"
+console.log(flavorSelection);
 
 // ! Challenge 2: Stock Check
-
 // You have a variable that tracks the number of Monster Energy cans left in the fridge. 
 // Use a ternary operator to print "Time to restock!" if the number is less than 5, or "We're stocked!" if the number is 5 or more.
 
